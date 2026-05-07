@@ -1,0 +1,24 @@
+{
+    "ioc": "185.220.101.47",
+    "enrichment": {
+        "ioc": "185.220.101.47",
+        "ioc_type": "ip",
+        "virustotal": {
+            "source": "VirusTotal",
+            "malicious_count": 15,
+            "suspicious_count": 3,
+            "total_engines": 91,
+            "verdict": "MALICIOUS"
+        },
+        "shodan": {
+            "source": "Shodan",
+            "error": "Status code 403"
+        }
+    },
+    "mitre": {
+        "technique_id": "T1071",
+        "technique_name": "Application Layer Protocol",
+        "tactic": "Command and Control",
+        "description": "Malicious IP with no specific port/tag signature. Likely C2 communication."
+    }
+}
